@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/tv_text"
+        android:hint="Type something here"
+        android:textSize="16sp"
+         />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This text will change"
+        android:layout_above="@id/sw_switch"
+        android:textSize="12sp"
+        android:layout_centerInParent="true"/>
+
+    <Switch
+        android:id="@+id/sw_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch "
+        android:layout_above="@id/bt_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12sp"
+         />
+
+    <Button
+        android:id="@+id/bt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
